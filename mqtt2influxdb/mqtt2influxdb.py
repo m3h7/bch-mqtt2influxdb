@@ -110,7 +110,6 @@ class Mqtt2InfluxDB:
                     return
 
                 record = {'measurement': measurement,
-                          'time': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
                           'tags': {},
                           'fields': {}}
 
